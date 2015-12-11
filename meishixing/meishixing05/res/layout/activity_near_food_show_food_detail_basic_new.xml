@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="top|left|center"
+        android:layout_marginLeft="5.0dip"
+        android:background="@drawable/radius_white_new_bg"
+        android:orientation="vertical"
+        android:padding="0.0dip" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="6.0dip" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <com.project.meishixing.views.CircleImageView
+                    android:id="@+id/activity_near_food_show_food_detail_userimg"
+                    style="@style/oval_header_image"
+                    android:layout_gravity="left|center"
+                    android:background="@drawable/avatar_shadow"
+                     />
+               
+                <TextView
+                    android:id="@+id/activity_near_food_show_food_detail_userlevelvalue"
+                    android:layout_width="12.0dip"
+                    android:layout_height="12.0dip"
+                    android:layout_gravity="bottom|right|center"
+                    android:gravity="center"
+                    android:textColor="@color/grey_white_text"
+                    android:textSize="8.0sp" 
+                    android:background="#ffff0000"
+                    />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/activity_near_food_show_food_detail_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left|center"
+                android:layout_marginLeft="50.0dip"
+                android:gravity="bottom|left|center"
+                android:maxWidth="150.0dip"
+                android:singleLine="true"
+                android:textColor="@color/red"
+                android:textSize="15.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activity_near_food_show_food_detail_fooddesc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left|center"
+                android:layout_marginLeft="50.0dip"
+                android:layout_marginTop="20.0dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/black_text"
+                android:textSize="11.5sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/activity_near_food_show_food_detail_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:padding="0.0dip"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left|center"
+        android:layout_marginTop="75.0dip"
+        android:background="@drawable/plus_bg" >
+
+        <CheckedTextView
+            android:id="@+id/activity_near_food_show_food_detail_want"
+            style="@style/want_checked_view"
+            android:layout_marginTop="9.5dip" />
+    </FrameLayout>
+
+</FrameLayout>

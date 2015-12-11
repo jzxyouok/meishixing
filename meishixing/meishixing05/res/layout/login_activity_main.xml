@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/wbg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <ScrollView
+        android:id="@+id/login_register_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <TextView
+                android:onClick="myChick"
+                android:id="@+id/login_register_other_tips"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/login_other_tips"
+                android:textColor="@color/black_text"
+                android:textSize="18.0sp"
+                android:textStyle="bold" />
+
+            <TableLayout
+                style="@style/table_layout_style"
+                android:layout_marginBottom="20.0dip"
+                android:stretchColumns="1" >
+
+                <TableRow
+                    android:onClick="myChick"
+                    android:id="@+id/login_by_sina"
+                    android:background="@drawable/group_row_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/sina_logo" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/login_by_weibo"
+                        android:textColor="@color/med_brown"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <include
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="1.0dip"
+                    layout="@layout/horizontal_line" />
+
+                <TableRow
+                    android:onClick="myChick"
+                    android:id="@+id/login_by_qq"
+                    android:background="@drawable/group_row_bottom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="5.0dip" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/qq_logo" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/login_by_qq"
+                        android:textColor="@color/med_brown"
+                        android:textSize="16.0sp"
+                        android:textStyle="bold" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/horizontal_separation_line" />
+
+                <TextView
+                    android:id="@+id/login_register__main_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="3.0dip"
+                    android:text="@string/login_main_tips"
+                    android:textColor="@color/black_text"
+                    android:textSize="15.0sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/horizontal_separation_line" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/login_register_framelayout"
+                android:layout_width="fill_parent"
+                android:layout_height="500.0dip"
+                android:layout_marginTop="20.0dip" >
+
+                <TableLayout
+                    android:visibility="gone"
+                    android:id="@+id/register_page"
+                    style="@style/table_layout_style"
+                    android:layout_gravity="top|center"
+                    android:stretchColumns="1" >
+
+                    <TableRow android:padding="10.0dip" >
+
+                        <TextView
+                            style="@style/login_register_text"
+                            android:text="@string/register_email" />
+
+                        <EditText
+                            android:id="@+id/register_email_edit"
+                            style="@style/login_register_text_hint"
+                            android:hint="@string/register_email_hint"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress" />
+                    </TableRow>
+
+                    <include
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="1.0dip"
+                        layout="@layout/horizontal_line" />
+
+                    <TableRow android:padding="10.0dip" >
+
+                        <TextView
+                            style="@style/login_register_text"
+                            android:text="@string/register_nickname" />
+
+                        <EditText
+                            android:id="@+id/register_nickname_edit"
+                            style="@style/login_register_text_hint"
+                            android:hint="@string/register_nickname_hint"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords" />
+                    </TableRow>
+
+                    <include
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="1.0dip"
+                        layout="@layout/horizontal_line" />
+
+                    <TableRow android:padding="10.0dip" >
+
+                        <TextView
+                            style="@style/login_register_text"
+                            android:text="@string/register_password" />
+
+                        <EditText
+                            android:id="@+id/register_password_edit"
+                            style="@style/login_register_text_hint"
+                            android:hint="@string/register_password_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword" />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:id="@+id/login_page"
+                    style="@style/table_layout_style"
+                    android:layout_gravity="top|center"
+                    android:stretchColumns="1"
+                    android:visibility="visible" >
+
+                    <TableRow android:padding="10.0dip" >
+
+                        <TextView
+                            style="@style/login_register_text"
+                            android:text="@string/login_username" />
+
+                        <EditText
+                            android:id="@+id/login_username_edit"
+                            style="@style/login_register_text_hint"
+                            android:hint="@string/login_username_hint"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapWords" />
+                    </TableRow>
+
+                    <include
+                        android:layout_height="1.0dip"
+                        android:layout_marginTop="1.0dip"
+                        layout="@layout/horizontal_line" />
+
+                    <TableRow android:padding="10.0dip" >
+
+                        <TextView
+                            style="@style/login_register_text"
+                            android:text="@string/login_password" />
+
+                        <EditText
+                            android:id="@+id/login_password_edit"
+                            style="@style/login_register_text_hint"
+                            android:hint="@string/login_password_hint"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword" />
+                    </TableRow>
+                </TableLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

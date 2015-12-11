@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_near_food_show_layout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/navgation_bg_800"
+    android:padding="0.0dip" >
+
+    <ImageView
+        android:id="@+id/activity_near_food_show_header_left_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="@null"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/activity_near_food_show_header_center_text"
+        android:layout_width="180.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/med_cream"
+        android:textSize="15.0sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/activity_near_food_show_header_right_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="@null"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/activity_near_food_show_header_right_loading"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="10.0dip"
+        android:visibility="invisible" />
+
+</FrameLayout>

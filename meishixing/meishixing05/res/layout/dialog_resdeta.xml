@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_pz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_restdetai_selector"
+        android:padding="10dp"
+        android:text="拍照上传"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dialog_tk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_restdetai_selector"
+        android:padding="10dp"
+        android:text="相册选择"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wbg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f00" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/header_menu_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="热门美食"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <Button
+        android:clickable="false"
+        android:id="@+id/bt_reflash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:text="正在加载数据..."
+       />
+
+    <com.project.meishixing.views.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:id="@+id/zuire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/tb_liked"
+                        android:gravity="center_vertical"
+                        android:text="本周最热" />
+
+                    <TextView
+                        android:id="@+id/tv_hotfood_hotweek_lookmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/zuire"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tv_selector"
+                        android:drawableRight="@drawable/triangle_icon"
+                        android:gravity="center_vertical"
+                        android:text="查看更多" />
+                </RelativeLayout>
+
+                <org.com.cctest.view.HorizontalListView
+                    android:id="@+id/hlv_hotfood_firs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/tb_liked"
+                        android:gravity="center_vertical"
+                        android:text="本月最热" />
+
+                    <TextView
+                        android:id="@+id/tv_hotfood_hotmon_lookmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tv_selector"
+                        android:drawableRight="@drawable/triangle_icon"
+                        android:gravity="center_vertical"
+                        android:text="查看更多" />
+                </RelativeLayout>
+
+                <org.com.cctest.view.HorizontalListView
+                    android:id="@+id/hlv_hotfood_sec"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/tb_liked"
+                        android:gravity="center_vertical"
+                        android:text="喜欢最多" />
+
+                    <TextView
+                        android:id="@+id/tv_hotfood_likemost_lookmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tv_selector"
+                        android:drawableRight="@drawable/triangle_icon"
+                        android:gravity="center_vertical"
+                        android:text="查看更多" />
+                </RelativeLayout>
+
+                <org.com.cctest.view.HorizontalListView
+                    android:id="@+id/hlv_hotfood_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.project.meishixing.views.MyScrollView>
+
+</LinearLayout>

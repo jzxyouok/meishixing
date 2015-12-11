@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:background="@drawable/photo_bg" >
+
+    <ImageView
+        android:id="@+id/iv_hotfir_item"
+        android:layout_width="136dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/text" />
+
+    <ImageView
+        android:id="@+id/iv_hotfir_item_ic"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/iv_hotfir_item"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/want_s" />
+
+    <TextView
+        android:layout_alignTop="@id/iv_hotfir_item_ic"
+        android:id="@+id/tv_hotfir_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_hotfir_item_ic"
+        android:text="本周热菜"
+        android:textColor="#fff" />
+
+</RelativeLayout>

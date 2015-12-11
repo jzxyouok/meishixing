@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.project.meishixing"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/wbg" >
+
+    <RelativeLayout
+        android:id="@+id/hotfodd_title_rtlt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5402E" >
+
+        <ImageView
+            android:id="@+id/hotfood_title_back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_menu_back"
+            android:onClick="beChicked"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/hotfood_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#ffffffff" />
+    </RelativeLayout>
+
+    <com.pubu.gridview.StaggeredGridView
+        android:id="@+id/hotfood_mystag_gdview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:column_count="2"
+        app:item_margin="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_collec_item_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_collec_item_image"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_colle_item_storname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="老海南椰奶清补凉"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_colle_item_storloca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="三亚市区商品大街道2号(近商品街一巷)" />
+    </LinearLayout>
+
+    <CheckBox
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:clickable="false"
+        android:visibility="gone"
+        android:button="@null"
+        android:background="@drawable/colle_del_selector"
+        android:id="@+id/cb_collec_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp" />
+
+</RelativeLayout>

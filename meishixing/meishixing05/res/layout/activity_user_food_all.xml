@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/activity_near_food_show_header" /> 
+	<org.com.cctest.view.XListView 
+	    android:layout_margin="2dp"
+	    android:background="@drawable/radius_white_new_bg"
+	    android:id="@+id/activity_user_food_all_pull"
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    />
+    
+</LinearLayout>

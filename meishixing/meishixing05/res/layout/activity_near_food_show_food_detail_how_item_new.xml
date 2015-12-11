@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true" 
+    android:layout_width="40dp"
+     android:layout_height="40dp"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/activity_near_food_showhow_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="left|center"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_weight="1.0"
+        android:gravity="left|center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/activity_near_food_showhow_item_text1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text"
+            android:textSize="15.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/activity_near_food_showhow_item_text2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/recdish_simple_color"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_column="2"
+        android:layout_gravity="left|center"
+        android:src="@drawable/triangle_icon"
+        android:layout_marginRight="3dp" />
+
+</TableRow>

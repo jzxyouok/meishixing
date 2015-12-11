@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_daren_item_poin"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#f00"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/iv_daren_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="3dp"
+        android:layout_toRightOf="@id/tv_daren_item_poin"
+        android:scaleType="centerCrop"
+        android:src="@drawable/text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/iv_daren_item"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_daren_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="嘟嘟嘟嘟"
+            android:textColor="#f00"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_daren_item_shar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共分享399道美食"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_daren_item_collec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="共收获399道美食"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/triangle_icon" />
+
+</RelativeLayout>

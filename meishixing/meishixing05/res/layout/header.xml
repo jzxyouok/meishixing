@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navgation_bg_800"
+    android:padding="0.0dip" >
+
+    <ImageView
+        android:onClick="myChick"
+        android:id="@+id/header_left_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center"
+        android:background="@drawable/header_menu_back"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="180.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:clickable="true"
+            android:onClick="myChick"
+            android:id="@+id/header_center_text_login"
+            android:layout_width="90.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/segment_left_on"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/med_cream"
+            android:textSize="15.0sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:clickable="true"
+            android:onClick="myChick"
+            android:id="@+id/header_center_text_register"
+            android:layout_width="90.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/segment_right_off"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/med_cream"
+            android:textSize="15.0sp"
+            android:visibility="visible" />
+        >
+    </LinearLayout>
+
+    <ImageView
+        android:onClick="myChick"
+        android:id="@+id/header_right_imgview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:background="@drawable/header_menu_finish"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/header_right_loading"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center"
+        android:layout_marginRight="10.0dip"
+        android:visibility="invisible" />
+
+</FrameLayout>

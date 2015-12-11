@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.meishixing"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="meishixing.MeshixingApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="G119XmNturgPOjEM5j0n5447" />
+
+        <activity
+            android:name=".activitys.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activitys.WellComeActivity" />
+        <activity android:name=".activitys.HomeActivity" />
+        <activity android:name=".activitys.NearRestaActivit" />
+        <activity android:name=".activitys.RestaDetailActivity" />
+        <activity android:name=".activitys.MapActivity" />
+        <activity android:name=".activitys.RestaMesActivity" />
+        <activity android:name=".activitys.SugActivity" />
+        <activity android:name=".activitys.ShareFoodActivity" />
+        <activity android:name=".activitys.HotFoodActivity" />
+        <activity android:name=".activitys.HotMoreFoodActivity" />
+        <activity android:name=".activitys.FoodMagazine" />
+        <activity android:name=".activitys.DaRenAcitivity" />
+        <activity android:name=".activitys.CollecActivity" />
+        <activity android:name=".activitys.FoodMagDetailActivity" />
+        <activity android:name=".activitys.HotRestActivit" />
+        <activity
+            android:name=".activitys.HotFirsActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name=".activitys.LoginActivity" />
+        <activity
+            android:name="com.project.meishixing.activitys.NearbyFoodActivity"
+            android:label="@string/title_activity_nearby_food" >
+        </activity>
+        
+        
+        <activity android:name=".activitys.NearFoodShowActivity"/>
+		<activity android:name=".activitys.UserFoodChildActivity"/>
+        <activity android:name=".activitys.UserFoodActivity"/>
+        
+    </application>
+
+</manifest>

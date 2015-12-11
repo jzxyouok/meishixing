@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="index_shadow_normal">#a0000000</color>
+    <color name="red">#fff34232</color>
+    <color name="simiple_button_color">#ff333333</color>
+    <color name="grey_white_text">#ffffffff</color>
+    <color name="black_text">#ff000000</color>
+    <color name="light_cream">#fff7f6f1</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="med_cream">#fff0eee4</color>
+    <color name="dark_brown">#ff1e0f00</color>
+    <color name="link_active">#ff006473</color>
+    <color name="med_brown">#ff564b40</color>
+    <color name="recdish_simple_color">#ff343434</color>
+    <color name="footprint_black">#ffd7d5ca</color>
+</resources>

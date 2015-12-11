@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/activity_near_food_show_food_detail_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="50.0dip"
+    android:layout_gravity="bottom|center"
+    android:background="#ffffffff"
+    android:gravity="bottom|center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/activity_near_food_show_food_detail_bottom_weibo"
+        style="@style/place_detail_bottom_text"
+        android:drawableTop="@drawable/tb_sina"
+        android:text="微博" />
+
+    <TextView
+        android:id="@+id/activity_near_food_show_food_detail_bottom_wx"
+        style="@style/place_detail_bottom_text"
+        android:drawableTop="@drawable/tb_weixin"
+        android:text="微信" />
+
+    <TextView
+        android:id="@+id/activity_near_food_show_food_detail_bottom_qq"
+        style="@style/place_detail_bottom_text"
+        android:drawableTop="@drawable/tb_qq_android"
+        android:text="QQ" />
+
+    <CheckedTextView
+        android:id="@+id/activity_near_food_show_food_detail_bottom_fav"
+        style="@style/place_detail_bottom_text"
+        android:drawableTop="@drawable/tb_like_state"
+        android:text="喜欢" />
+
+    <TextView
+        android:id="@+id/activity_near_food_show_food_detail_bottom_comment"
+        style="@style/place_detail_bottom_text"
+        android:drawableTop="@drawable/tb_reply"
+        android:text="评论" />
+
+</LinearLayout>
